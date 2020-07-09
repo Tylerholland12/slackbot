@@ -7,9 +7,16 @@ import (
 
 type splashImage struct {
 	Data []struct {
-		Type string `json:"type`
-		ID   string `json:id`
-		URL  string `json:url`
+		Type         string `json:"type"`
+		ID           string `json:"id"`
+		URL          string `json:"url"`
+		Query        string `json:"query"`
+		Page         string `json:"page"`
+		OrderBy      string `json:"order_by"`
+		Title        string `json:"title"`
+		Description  string `json:"description"`
+		CollectionID string `json:"collection_id"`
+		PhotoID      string `json:"photo_id"`
 	}
 }
 
