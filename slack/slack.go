@@ -66,6 +66,7 @@ func sendHelp(slackClient *slack.RTM, message, slackChannel string) {
 		return
 	}
 	slackClient.SendMessage(slackClient.NewOutgoingMessage(helpMessage, slackChannel))
+
 }
 
 // sendResponse is NOT unimplemented --- write code in the function body to complete!
