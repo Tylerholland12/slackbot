@@ -2,7 +2,6 @@ package slack
 
 import (
 	"net/url"
-	"os"
 )
 
 type splashImage struct {
@@ -25,14 +24,6 @@ func getImage(key string) {
 	if err != nil {
 		panic(err)
 	}
-
-	param := url.Values{}
-	// allow acces
-	param.Add("api_key", os.Getenv("ACCESS_KEY"))
-	param.Add("q", key)
-
-	// encoded query values, without '?'
-	baseURL.RawQuery = param.Encode()
 
 }
 

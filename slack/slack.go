@@ -13,6 +13,11 @@ import (
    in the Slack API UI
 */
 const helpMessage = "type in '@infobot <command_arg_1> <command_arg_2>'"
+const whatMessage = "type in '@infobot <command_arg_1> <command_arg_2>'"
+
+func getinfo() []string {
+	return []string{"What do you do", "can you do something"}
+}
 
 /*
    CreateSlackClient sets up the slack RTM (real-timemessaging) client library,
